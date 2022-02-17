@@ -1,3 +1,9 @@
+//Wraps function in an IIFE (Immediately Invoked Function Expression).
+//this is similar to a factory function
+
+const weather = (() => {
+
+
 async function getWeather() {
     
     try {
@@ -12,5 +18,6 @@ async function getWeather() {
     }
 }
 
-//then call asynchronous funciton with this.
-getWeather();
+})();
+
+export default weather;
