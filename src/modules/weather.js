@@ -6,14 +6,12 @@ import regeneratorRuntime from "regenerator-runtime";
 
 
 
-
 //constructing a factory function here called 'weather' that contains two functions as methods
 //factory functions do NOT require the 'new' keyword and use the arrow function expression
 // another function of the object will be to return variables from that data
 
 
-
-
+//async function here with await keyword instead of regular promise format
 async function getWeather(locationName) {
     
     try {
@@ -34,9 +32,7 @@ async function getWeather(locationName) {
     
 }
 
-    //IMPORTANT ADD THIS PART OR DOESN'T WORK FOR ALL FUNCTIONS ADDED
-   
 
-
+//IMPORTANT ADD THIS PART OR DOESN'T WORK FOR ALL FUNCTIONS ADDED
 export {getWeather};
 
