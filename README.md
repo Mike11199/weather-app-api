@@ -6,7 +6,7 @@
 <br />
 <h2>Concepts learned from this project</h2>
 
--Sending an asynchronous JavaScript request using an API to OpenWeatherMap to request weather information for a specific location.  </br></br>
+-Sending an asynchronous JavaScript request using a REST API to OpenWeatherMap to request weather information for a specific location.  </br></br>
 -Installing npm to the project as a package manager to automatically install 3rd party packages and keep them up to date.  </br></br>
 -Using webpack as a module bundler to create a single script file in the dist folder.  </br></br>
 -Using a transpiler called Babel to be able to use keywords such as 'import' and 'require', and extra JavaScript features such as Sass instead of CSS.  </br></br>
