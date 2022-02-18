@@ -6,11 +6,10 @@
 <br />
 <h2>Concepts learned from this project</h2>
 
--Installing npm.  </br></br>
--Placeholder.  </br></br>
-
-
-
+-Installing npm to the project as a package manager to automatically install 3rd party packages and keep them up to date.  </br></br>
+-Using webpack as a module bundler to create a single script file in the dist folder.  </br></br>
+-Using a transpiler called Babel to be able to use keywords such as 'import' and 'require', and extra JavaScript features such as Sass instead of CSS.  </br></br>
+-Used npm task runner features to make some tasks such as running webpack and deploying to github pages subdirectory faster.  </br></br>
 
 
 <br />
