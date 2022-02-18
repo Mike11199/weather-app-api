@@ -1,5 +1,5 @@
 import * as apiFunctions from "./modules/weather.js";
-
+import './styles/styles.scss';
 
 //https://webpack.js.org/guides/production/
 if (process.env.NODE_ENV !== 'production') {
