@@ -1,5 +1,28 @@
-$body-color: red;
+$pressButtonShadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 
-body {
-    color: $body-color;
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
 }
+
+#searchWeather {
+    background-color: darkblue;
+    color: white;
+    height: 40px;
+    &:hover {
+    background-color: rgb(10, 10, 221);
+    box-shadow: $pressButtonShadow;
+    
+    }
+}
+
+
+.header{
+
+    background-color: lightgrey;
+
+    h1 {
+        color: rgb(230, 129, 5);
+        margin-left: 10px;
+}}
