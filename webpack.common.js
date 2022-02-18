@@ -1,5 +1,5 @@
 const path = require('path');
-// const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 //had to get rid fo this htmlwebpackplugin or html file gets wiped and regenerated each time with one line formatting
 
 
@@ -8,11 +8,14 @@ module.exports = {
     entry: {
       app: './src/index.js',
     },
-    // plugins: [
-    //   new HtmlWebpackPlugin({
-    //     title: 'Production',
-    //   }),
-    // ],
+    plugins: [
+      new HtmlWebpackPlugin({
+        title: 'Production',
+        inject: 'body',
+        template: './src/index.html',
+        filename: 'index.html'
+      }),
+    ],
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
