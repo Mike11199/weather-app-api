@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-//had to get rid fo this htmlwebpackplugin or html file gets wiped and regenerated each time with one line formatting
 
 
 // webpack.config.js  
@@ -9,6 +8,7 @@ module.exports = {
       app: './src/index.js',
     },
     plugins: [
+      //this makes it so the index.html in src gets bundled to the dist folder.  you should touch nothing in the dist folder as that is all managed by webpack
       new HtmlWebpackPlugin({
         title: 'Production',
         inject: 'body',
