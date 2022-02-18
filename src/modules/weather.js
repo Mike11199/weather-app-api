@@ -10,8 +10,8 @@ const weather = (() => {
 async function getWeather() {
     
     try {
-         //don't forget http:// or errpr
-        const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=938a422eddf6c0de9dd3c9cc0626c5e4', {mode: 'cors'}) 
+         //don't forget https:// or errpr
+        const response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=938a422eddf6c0de9dd3c9cc0626c5e4', {mode: 'cors'}) 
         const weatherData = await response.json();
         console.log(weatherData);
         
