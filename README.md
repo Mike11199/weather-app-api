@@ -10,8 +10,9 @@
 -Installing npm to the project as a package manager to automatically install 3rd party packages and keep them up to date.  </br></br>
 -Using webpack as a module bundler to create a single script file in the dist folder.  </br></br>
 -Splitting webpack configurations into a development and production version which can be run with an npm script to make debugging possible in a dev server.</br></br>
--Using a transpiler called Babel to be able to use keywords such as 'import' and 'require', and extra JavaScript features such as Sass instead of CSS.  </br></br>
+-Using a transpiler called Babel to be able to use keywords such as 'import' and 'require', and extra JavaScript features such as SCSS instead of CSS.  </br></br>
 -Used npm task runner features to make some tasks such as running webpack and deploying to github pages subdirectory faster.  </br></br>
+-Added an import statement in index.js to be able to use SCSS for nesting, variables, and & operators in CSS sheets.  </br></br>
 
 
 <br />
