@@ -15,6 +15,7 @@
 -Used npm task runner features to make some tasks such as running webpack and deploying to github pages subdirectory faster.  </br></br>
 -Added an import statement in index.js to be able to use SCSS for nesting, variables, and & operators in CSS sheets.  </br></br>
 -Modified event listeners to use asynchronous functions and allow top-level await statements.  </br></br>
+-Extracted data from the API to call another API (OpenWeatherMap detail), feeding in long/lat data from the initial call to pull future weather forecast and other infromation with another asynchronous function.  </br></br>
 
 
 <br />
