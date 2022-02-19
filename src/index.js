@@ -1,4 +1,5 @@
 import * as apiFunctions from "./modules/weather.js";
+import * as updateDOM from "./modules/updateDOM";
 import './styles/styles.scss';
 
 //https://webpack.js.org/guides/production/
@@ -9,30 +10,32 @@ if (process.env.NODE_ENV !== 'production') {
 
 
 const searchWeather = document.getElementById("searchWeather");
+const form = document.getElementById("weatherMain");
+const cityField = document.getElementById("citySearch");
 
-
-const cityName2 = "Sacramento";
 
 
 searchWeather.addEventListener('click',async function(e) {
-
- 
+  e.preventDefault()
   const data = await apiFunctions.getWeather();
+  console.log(data);
+});
 
-  console.log("The city looked up is " + data.name);
-  console.log("The temperature is " + data.main.temp);
-  console.log("The humidity is " + data.main.humidity);
-  console.log("The actual temperature feels like " + data.main.feels_like);
-  console.log("The visibility in feet is " + data.visibility);
-  console.log("The wind speed is " + data.wind.speed);
-  console.log("The wind heading in degrees is " + data.wind.deg);
-
+cityField.addEventListener('keypress', async function (e) {
+  
+  if (e.key === 'Enter') {
+    const data = await apiFunctions.getWeather();
+    console.log(data);
+  }
 });
 
 
+form.addEventListener('submit', function (e) {
+  e.preventDefault()
+});
 
 
- 
+updateDOM.updateCity();
   
 
 console.log("test3");

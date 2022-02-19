@@ -1,16 +1,6 @@
-//Wraps function in an IIFE (Immediately Invoked Function Expression).
-//this is similar to a factory function
 
 //include this import statement whenever using async syntax instead of regular promises
 import regeneratorRuntime from "regenerator-runtime";
-
-
-
-//constructing a factory function here called 'weather' that contains two functions as methods
-//factory functions do NOT require the 'new' keyword and use the arrow function expression
-// another function of the object will be to return variables from that data
-
-
 
 //async function here with await keyword instead of regular promise format
 async function getWeather() {
@@ -25,7 +15,17 @@ async function getWeather() {
                                         '&units=imperial&APPID=938a422eddf6c0de9dd3c9cc0626c5e4', {mode: 'cors'}) 
 
         const weatherData = await response.json();
-        console.log(weatherData);
+        // console.log(weatherData);
+
+        console.log("The city looked up is " + weatherData.name);
+        console.log("The temperature is " + weatherData.main.temp);
+        console.log("The humidity is " + weatherData.main.humidity);
+        console.log("The actual temperature feels like " + weatherData.main.feels_like);
+        console.log("The visibility in feet is " + weatherData.visibility);
+        console.log("The wind speed is " + weatherData.wind.speed);
+        console.log("The wind heading in degrees is " + weatherData.wind.deg);
+
+
         return weatherData;
     }
 
@@ -34,7 +34,10 @@ async function getWeather() {
         alert(err);
     }
 
-    
+
+
+
+
 }
 
 
