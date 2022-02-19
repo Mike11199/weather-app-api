@@ -19,6 +19,7 @@ searchWeather.addEventListener('click',async function(e) {
   e.preventDefault()
   const data = await apiFunctions.getWeather();
   console.log(data);
+  updateDOM.updateCity(data);
 });
 
 cityField.addEventListener('keypress', async function (e) {
@@ -26,16 +27,17 @@ cityField.addEventListener('keypress', async function (e) {
   if (e.key === 'Enter') {
     const data = await apiFunctions.getWeather();
     console.log(data);
+    updateDOM.updateCity(data);
   }
 });
 
 
 form.addEventListener('submit', function (e) {
-  e.preventDefault()
+  e.preventDefault(data)
 });
 
 
-updateDOM.updateCity();
+
   
 
 console.log("test3");
