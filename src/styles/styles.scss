@@ -1,5 +1,3 @@
-$pressButtonShadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
-
 
 * {
     font-family: Arial, Helvetica, sans-serif;
@@ -10,35 +8,124 @@ $pressButtonShadow: inset 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
     background-color: darkblue;
     color: white;
     height: 40px;
+    width: 100px;
     border: 0px;
     &:hover {
     background-color: rgb(10, 10, 221);
-    box-shadow: $pressButtonShadow;
-    
     }
+    &:active{
+    box-shadow: inset 5px 5px 5px 5px rgba(0, 0, 0, 0.4);
+    }
+}
+
+#citySearch {
+    height: 30px;
+    width: 500px;
+}
+
+
+#weatherMain{
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 
 .header{
 
     background-color: lightgrey;
+    box-shadow: inset 2px 2px 12px 2px rgba(0, 0, 0, 0.2);
 
     h1 {
         color: rgb(230, 129, 5);
         margin-left: 10px;
+        height: 60px;
+        align-items: center;
+        display: flex;
 }}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.dataBar {
+    display: flex;
+    margin: 0px;
+    justify-content: center;
+}
 
 
 .weatherDataOutput {
+    
+    display: flex;
+    flex-direction: column;
     border: solid 1px black;
-    margin-top: 50px;
+    width: 800px;
+    
+    .citytitle{
+        display: flex;
+        flex-direction: column;
+        height: 50px;
+        align-items: center;
+        background-color: black;
+
+        .cityNameOutput {
+
+            background-color: black;
+            color: white;
+            height: 50px;
+            display: flex;
+            font-size: 25px;
+            margin: 0px;
+            align-items: center;
+        }
+    
+
+
+    }
+    
+    
+  
     .cardUpper {
         border: solid 1px black;
         height: 100px;
+        display: flex;
+        flex-direction: column;
     }
     .cardLower {
         border: solid 1px black;
+        display: flex;
+        flex-direction: column;
         
+
+        .row {
+            display: flex;
+            height: 30px;
+            flex-direction: row;
+  
+            
+        }
+
+        .title {
+            border: solid 1px black;
+            width: 50%;
+            background-color: rgb(16, 99, 194);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            
+        }
+
+        .data {
+            border: solid 1px black;
+            width: 50%;
+        }
+            
     }
+
+
 }
 
