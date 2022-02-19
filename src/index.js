@@ -18,6 +18,7 @@ const cityField = document.getElementById("citySearch");
 searchWeather.addEventListener('click',async function(e) {
   e.preventDefault()
   const data = await apiFunctions.getWeather();
+  apiFunctions.getWeatherDetail(data);
   console.log(data);
   updateDOM.updateCity(data);
 });
@@ -28,6 +29,7 @@ cityField.addEventListener('keypress', async function (e) {
     const data = await apiFunctions.getWeather();
     console.log(data);
     updateDOM.updateCity(data);
+    apiFunctions.getWeatherDetail(data);
   }
 });
 

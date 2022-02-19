@@ -33,14 +33,44 @@ async function getWeather() {
         console.log(err);
         alert(err);
     }
-
-
-
-
-
 }
 
 
+
+async function getWeatherDetail(weatherData) {
+    
+
+    const coordLat = weatherData.coord.lat
+    const coordLong = weatherData.coord.lon
+
+    
+
+    try {
+        //don't forget https:// or error.  had to change to https from http due to github pages being https and blocking api request if not also https
+        const response = await fetch("https://api.openweathermap.org/data/2.5/onecall?lat=" + coordLat + "&lon=" + coordLong + 
+                                        "&APPID=938a422eddf6c0de9dd3c9cc0626c5e4" + "&units=imperial", {mode: 'cors'}) 
+
+                  
+        const weatherDataDetail = await response.json();
+        console.log("this is the detailed weather object below");
+        console.log(weatherDataDetail);
+
+    
+
+
+        return weatherDataDetail;
+    }
+
+    catch (err)  {
+        console.log(err);
+        alert(err);
+    }
+}
+
+
+
+
+
 //IMPORTANT ADD THIS PART OR DOESN'T WORK FOR ALL FUNCTIONS ADDED
-export {getWeather};
+export {getWeather, getWeatherDetail};
 
