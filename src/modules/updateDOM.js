@@ -19,13 +19,13 @@ const feelslike = document.getElementById("feelslike");
 feelslike.innerHTML = data.main.feels_like
 
 const visibility = document.getElementById("visibility");
-visibility.innerHTML = data.main.visibility
+visibility.innerHTML = data.visibility
 
 const windspeed = document.getElementById("windspeed");
-windspeed.innerHTML = data.main.wind.speed
+windspeed.innerHTML = data.wind.speed
 
 const windheading = document.getElementById("windheading");
-windheading.innerHTML = data.main.wind.deg
+windheading.innerHTML = data.wind.deg
 
 }
 

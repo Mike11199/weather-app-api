@@ -33,7 +33,7 @@ cityField.addEventListener('keypress', async function (e) {
 
 
 form.addEventListener('submit', function (e) {
-  e.preventDefault(data)
+  e.preventDefault()
 });
 
 
