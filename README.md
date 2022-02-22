@@ -4,7 +4,7 @@
 
 [<img alt="alt_text" width="200px" src="https://user-images.githubusercontent.com/91037796/151688958-059ec882-a5ee-41cc-8985-c9ed26969de3.png" />](https://mike11199.github.io/weather-app-api/)
 
-<br />
+
 <h2>Concepts learned from this project</h2>
 
 -Sending an asynchronous JavaScript request using a REST API to OpenWeatherMap to request weather information for a specific location.  </br></br>
@@ -19,5 +19,5 @@
 
 
 <br />
-
   
+![1](https://user-images.githubusercontent.com/91037796/155059482-3574c3f6-876b-4d2c-897b-28864314adc1.png)
